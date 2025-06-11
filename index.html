@@ -7,42 +7,49 @@
     <title>AI Aussie Poem Generator</title>
   </head>
   <body>
-    <header>
-      <h1>AI Aussie Poem Generator</h1>
-    </header>
+    <div class="container">
+      <header>
+        <h1>🦘AI Aussie Poem Generator🐨</h1>
+        <h2>
+          Type in a topic — we’ll bash out a beaut Aussie poem in no time!
+        </h2>
+      </header>
 
-    <main>
-      <form>
-        <input
-          type="text"
-          placeholder="Enter the topic of the Aussie poem"
-          autofocus
-          required
-          autocomplete="off"
-        />
-        <input type="submit" />
-      </form>
-      <div>
-        The poem will go here My Country The love of field and coppice, Of green
-        and shaded lanes.
-      </div>
-    </main>
+      <main>
+        <form>
+          <input
+            type="text"
+            placeholder="Enter the topic of the Aussie poem"
+            autofocus
+            required
+            autocomplete="off"
+            class="instructions"
+          />
+          <br />
+          <input type="submit" class="submit-button" />
+        </form>
+        <div class="poem">
+          The poem will go here My Country The love of field and coppice, Of
+          green and shaded lanes.
+        </div>
+      </main>
 
-    <footer>
-      This AI project was coded by
-      <a href="https://github.com/LeishaH" target="_blank">Leisha Henry</a>
-      and is
-      <a
-        href="https://github.com/LeishaH/aussie-poem-generator"
-        target="_blank"
-      >
-        open-sourced on GitHub</a
-      >
-      and is
-      <a href="https://aiaussiepoemgenerator.netlify.app" target="_blank"
-        >hosted on Netlify.</a
-      >
-    </footer>
+      <footer>
+        This AI project was coded by
+        <a href="https://github.com/LeishaH" target="_blank">Leisha Henry</a>
+        and is
+        <a
+          href="https://github.com/LeishaH/aussie-poem-generator"
+          target="_blank"
+        >
+          open-sourced on GitHub</a
+        >
+        and is
+        <a href="https://aiaussiepoemgenerator.netlify.app" target="_blank"
+          >hosted on Netlify.</a
+        >
+      </footer>
+    </div>
 
     <script src="src/index.js"></script>
   </body>
