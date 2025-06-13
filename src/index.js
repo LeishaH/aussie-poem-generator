@@ -1,3 +1,13 @@
-function generatePoem() {
-  alert("Here's your Aussie poem!");
+function generatePoem(event) {
+  event.preventDefault();
+
+  new Typewriter("#poem", {
+    strings: "The love of field and coppice",
+    autoStart: true,
+    delay: 1,
+    cursor: "",
+  });
 }
+
+let poemFormElement = document.querySelector("#poem-generator-form");
+poemFormElement.addEventListener("submit", generatePoem);

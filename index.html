@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <link rel="stylesheet" href="src/style.css" />
     <title>AI Aussie Poem Generator</title>
   </head>
@@ -16,7 +17,7 @@
       </header>
 
       <main>
-        <form>
+        <form id="poem-generator-form">
           <input
             type="text"
             placeholder="Enter the topic of the Aussie poem"
@@ -28,10 +29,7 @@
           <br />
           <input type="submit" class="submit-button" />
         </form>
-        <div class="poem">
-          The poem will go here My Country The love of field and coppice, Of
-          green and shaded lanes.
-        </div>
+        <div class="poem" id="poem"></div>
       </main>
 
       <footer>
