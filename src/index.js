@@ -1,7 +1,4 @@
 function displayPoem(response) {
-  console.log("poem generated");
-  console.log("Poem response:", response.data.answer);
-
   const oldPoem = document.querySelector("#poem");
   const newPoem = document.createElement("div");
   newPoem.id = "poem";
@@ -40,10 +37,6 @@ function generatePoem(event) {
   const apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${encodeURIComponent(
     prompt
   )}&context=${encodeURIComponent(context)}&key=${apiKey}`;
-
-  console.log("Generating poem...");
-  console.log(`Prompt: ${prompt}`);
-  console.log(`Context: ${context}`);
 
   axios
     .get(apiUrl)
