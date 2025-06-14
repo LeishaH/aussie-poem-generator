@@ -6,7 +6,7 @@
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
     <link rel="stylesheet" href="src/style.css" />
-    <title>AI Aussie Poem Generator</title>
+    <title>🦘AI Aussie Poem Generator🐨</title>
   </head>
   <body>
     <div class="container">
@@ -18,20 +18,24 @@
       </header>
 
       <main>
-        <form id="poem-generator-form">
-          <input
-            type="text"
-            placeholder="Enter the topic of the Aussie poem"
-            autofocus
-            required
-            autocomplete="off"
-            class="instructions"
-            id="user-instructions"
-          />
-          <br />
-          <input type="submit" class="submit-button" />
-        </form>
-        <div class="poem" id="poem"></div>
+        <div class="form-container">
+          <form id="poem-generator-form">
+            <input
+              type="text"
+              placeholder="Type a topic for your Aussie poem"
+              autofocus
+              required
+              autocomplete="off"
+              class="instructions"
+              id="user-instructions"
+            />
+
+            <input type="submit" class="submit-button" />
+          </form>
+
+          <div class="hint">i.e: Wombat, Sydney, Lamington</small>
+        </div>
+        <div class="poem hidden" id="poem"></div>
       </main>
 
       <footer>

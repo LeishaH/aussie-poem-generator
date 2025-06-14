@@ -30,7 +30,8 @@ function generatePoem(event) {
   const userTopic = instructionsInput.value.trim();
 
   const poemElement = document.querySelector("#poem");
-  poemElement.innerHTML = "✍️ Generating poem...";
+  poemElement.classList.remove("hidden");
+  poemElement.innerHTML = `<div class="blink">✍️ Generating an Aussie poem about <strong>${instructionsInput.value}</strong>...</div>`;
 
   const apiKey = "tf950d82b50b8f88a15d0ac93o492d93";
   const prompt = `Generate an Australian poem about ${userTopic}`;
